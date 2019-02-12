@@ -94,3 +94,8 @@ Some useful commands
 
 1) "git remote show origin"  get the Git repository's name in some Git repository and also original clone URL.
 2) "git remote set-url origin [url]" for setting the remote url
+
+
+
+python 3 installation folder path in windows 10:
+C:\Users\arslan\AppData\Local\Programs\Python\Python35
