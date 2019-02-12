@@ -47,9 +47,22 @@ IGNORE_FILES = [".ipynb_checkpoints"]
 
 THEME = "E:\creating_data_science_blog\jupyter-blog\latest_theme\pelican-themes\\attila"
 
-
+DISQUS_SITENAME = "arslanblog"
 
 SITEURL = "https://arslan-san.github.io"
+
+#PAGE_URL = '{slug}'
+#PAGE_SAVE_AS = '{slug}'
+
+DISPLAY_PAGES_ON_MENU = False
+#DISPLAY_CATEGORIES_ON_MENU = False
+
+MENUITEMS = (
+    ('About', '/pages/about.html'),
+    ('Useful Resources', '/pages/useful-resources.html'),
+)
+
+LOAD_CONTENT_CACHE = False
 
 # if you set your home page rahther than blog page then do the following steps
 

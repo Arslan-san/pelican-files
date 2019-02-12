@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'n'
+SITEURL = 'https://arslan-san.github.io/'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -22,7 +22,8 @@ DELETE_OUTPUT_DIRECTORY = False
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "arslanblog"
+#DISQUS_SITENAME = "arslanblog"
+
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
