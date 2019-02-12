@@ -1,0 +1,96 @@
+Instructions for creating your data science blog
+
+==> We use static site generator called "Pelican" for building this
+==> First we need to make virtual environment for python 3.5
+	==> Install python 3.5
+	==> if you have already virtualenv then skip the below command otherwise first install virtualenv
+		==> pip install virtualenv
+	==> then make virtual environment in "any folder" by following command: (http://timmyreilly.azurewebsites.net/setup-a-virtualenv-for-python-3-on-windows/)
+		==> virtualenv --python="python 3.5 path"\python.exe "environment_name"
+	==> change the current directory to virtual environment directory
+	==> then change the current directory to scripts directory by entering following command
+		==> cd Scripts
+		==> type "activate" then press enter 
+	==> Now move back to virtaul environemnt directory from the scripts directory of virtual environment
+	==> Now at this point you have python 3.5 virtual environment activate
+	==> if you want to deactivate the environment just enteer the below command
+		==> type "deactivate" then press enter
+
+==> make new folder inside the virtualenv called "any_blog_name"
+==> move to "any_blog_name" folder and create the file "requirements.txt" and put the following content:
+
+	Markdown==2.6.6
+	pelican==3.6.3
+	jupyter>=1.0
+	ipython>=4.0
+	nbconvert>=4.0
+	beautifulsoup4
+	ghp-import==0.4.1
+	matplotlib==1.5.1
+
+==> Now run the command "pip install -r requirements.txt" in "any_blog_name" folder
+==> Now enter command "pelican-quickstart" to start the pelican. When you enter, You'll get a sequence of questions
+    that will help you setup your blog properly. For most of the questions, it's okay to just hit Enter and accept
+    the default value. The only ones you should fill out are the title of the website, the author of the website,
+    n for the URL prefix, and the timezone.
+
+==> After running pelican-quickstart, you should have two new folders in jupyter-blog, content, and output, 
+    along with several files, such as pelicanconf.py and publishconf.py.
+ 
+==> elican doesn't support writing blog posts using Jupyter by default — we'll need to install
+    a plugin that enables this behavior. Few are the commands that you should enter for this:
+	==> git init to initialize the current folder
+	==> create the folder "plugins"
+	==> Run git submodule add git://github.com/danielfrg/pelican-ipynb.git plugins/ipynb to add in the plugin.
+	==> Now You should now have a .gitmodules file and a plugins folder
+
+==> in order to activate the plugin, we will need to add few lines in pelicanconf.py. Below lines
+    tell pelican to activate the plugin when generating HTML.
+
+	MARKUP = ('md', 'ipynb')
+
+	PLUGIN_PATH = './plugins'
+	PLUGINS = ['ipynb.markup']
+
+==> Now at this point you have a static site generator called "pelican". In order to post something you have to use
+    content folder. How to use content folder you have to follow the instruction from below link"
+	==> https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/
+
+==> Now when you create something in Content folder you should create HTML. Foloowing are the commands
+    that generates the HTML:
+	==> switch to the "any_blog_name" folder
+	==> Run "pelican content" command to generate the HTML
+	==> Now switch to the "output" directory
+	==> Run "python -m pelican.server"
+	==> Now visit "localhost:8000" in your browser to preview the blog. After that you should be able 
+	    to browse a listing of all the posts in your blog, along with the specific post you created.
+
+
+Now it's time to deploy our blog to github so that every one could see our blog.
+
+==> Sign-up for github if you haven't already.
+==> create repository in your githu account called "username.github.io", where username is your github username.
+==> create two separate repositories - one inside the output directory where Pelican generates your 
+    HTML (this repo should have username.github.io on GitHub as a remote), and another in your blog's main 
+    directory with your source Markdown files (in content), theme, and configuration files (this repo should 
+    have a different remote on GitHub). Following are the commands for this: (http://mathamy.com/migrating-to-github-pages-using-pelican.html)
+	
+	cd output
+	git init
+	git remote add origin https://github.com/username/username.github.io.git
+	git add --all
+	git commit -m "commit message"
+	git push origin master (if this command gives error run this command: "git push origin +HEAD")
+
+	
+
+==> Try visiting username.github.io — you should see your page! Finally Finally :)
+
+If you have your own domain name that you'd like to use instead of "username.github.io", you'll need to follow
+this link: "https://help.github.com/articles/using-a-custom-domain-with-github-pages/"
+
+
+Some useful commands
+
+1) "git remote show origin"  get the Git repository's name in some Git repository and also original clone URL.
+2) "git remote set-url origin [url]" for setting the remote url
