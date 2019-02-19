@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Arslan Ahmad'
 SITENAME = "Arslan's Blog"
-SITEURL = ''
+SITEURL = 'https://arslan-san.github.io'
 
 PATH = 'content'
 
@@ -39,17 +39,24 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
 
+
+
+# just
+
+STATIC_PATHS = ['images','images/classification-course-certificate.jpg']
+
+
 # if you create jupyter files in the content dir, snapshots are saved with the same
 # metadata. These need to be ignored. 
 IGNORE_FILES = [".ipynb_checkpoints"]
 
 #THEME = "E:\creating_data_science_blog\jupyter-blog\latest_theme\pelican-themes\\brownstone"
 
-THEME = "E:\creating_data_science_blog\jupyter-blog\latest_theme\pelican-themes\\attila"
+THEME = "E:\creating_data_science_blog\pythonthreeEnv\jupyter-blog\latest_theme\pelican-themes\\attila"
 
 DISQUS_SITENAME = "arslanblog"
 
-SITEURL = "https://arslan-san.github.io"
+#SITEURL = "https://arslan-san.github.io"
 
 #PAGE_URL = '{slug}'
 #PAGE_SAVE_AS = '{slug}'
@@ -60,6 +67,7 @@ DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ('About', '/pages/about.html'),
     ('Useful Resources', '/pages/useful-resources.html'),
+    ('Completed Coursera Courses', '/pages/completed-coursera-courses.html'),
 )
 
 LOAD_CONTENT_CACHE = False

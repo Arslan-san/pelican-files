@@ -1,0 +1,190 @@
+slug:classification-course
+allow_uppercase_extensions : false 
+Date: 2019-02-19
+Tags: machine-learning data-science
+author: Arslan Ahmad
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Machine Learning Classification</title>
+</head>
+<body>
+
+
+
+
+
+<h4>
+
+
+	<p>
+		<i>
+
+			<ul style="list-style-type:disc;">
+
+<!-- 				<li> Click on the image to view certificate </li>
+
+				 <a href="https://www.coursera.org/account/accomplishments/certificate/TMDPHCPT45N9"> 
+				 
+				 <img src="../images/classification-course-certificate.jpg" alt="Trulli" width="500" height="333">
+				 
+				  </a>
+ -->
+				<li > <a href="https://www.coursera.org/account/accomplishments/certificate/TMDPHCPT45N9">Click it to view the Course Certificate</a>  </li>
+ 				<li margin: 10px 0;> <a href="https://github.com/Arslan-san/Machine-learning-specialization/tree/master/Machine%20Learning%20Classification%20Course%20Material">Click it to view the Complete course material </a> </li> 
+
+			</ul>
+
+			
+			
+		</i>
+	</p>
+
+
+
+</h4>
+
+
+<h1>About course</h1>
+
+	<p> 
+	
+	So, I am going to share the things which I learnt during the course (Machine learning: Clasification).
+	Basically this course is about different types of linear classifiers that we used for the classification purpose
+	like logistic regression, descision tree etc and how we handle diffrent problems that may occur during classification.
+	Now I will list all the things which I understand mostly. 
+   
+    </p>
+
+<h2>List of those things that I learnt in this course:</h2>
+
+<h3> Logistic Regression  </h3>
+
+<ul style="list-style-type:disc;">
+
+
+	<li> Why we used logistic regression not linear regression? </li> 
+	<li> What are coefficient or weights of each attribute in logistic regression and how do we find these coefficient? </li>
+	<li> Describe impact of coefficient values on logistic regression output </li>
+	<li> Interpret logistic regresson outputs as class probabilities </li>
+	<li> Describe decision boundries in logistic regression </li>
+	<li> Use class probability to express degree of confidence in prediction </li>
+	<li> Measure quality of a classifier using the likelihood function </li>
+	<li> Learn a logostic regression model with gradient ascent </li>
+	<li> Identify when overfitting is happening </li>
+	<li> Relate large learned coefficients to overfitting </li>
+	<li> Describe the impact of overfitting on decision boundries </li>
+	<li> Describe what happens to estimated coefficients as tuning parameter lambda(𝛌) is varies </li>
+	<li> Interpret coefficient path plot </li>
+	<li> What is L2 and L1 Regularization? </li>
+	<li> Estimate L2 regularized logistic regression coefficient using gradient asccent </li>
+	<li> How de we incaporate overfirring by using L2 regularization and some time by using L1 regularization </li>
+	<li> Describe the use of L1 regularization to obtain sparce logistic regression solutins </li>
+	<li> What is sigmoid function? </li>
+	<li> Why do we used sigmoid function? </li>
+	<li> How do we find probabilities by using sigmoid function? </li>
+	<li> What is training and test error? </li>
+	<li> What is overfitting? </li>
+	<li> How do we say our model is overfit by looking at the training error? </li>
+	<li> What does that mean when training error is less than the test error or vice versa? </li>
+	<li> Perform multiclass classification using the 1-versus-all approach </li>
+
+
+ </ul>
+
+
+<h3> Decision trees  </h3>
+
+
+<ul style="list-style-type:disc;">
+ 	
+	
+	<li> Define a decision tree classifier </li>
+	<li> Interpret the output of a decision tree </li>
+	<li> Learn a decision tree classifier using greedy algorithm </li>
+	<li> What are decision trees and what are stumps in trees? </li>
+	<li> Identify when overfitting in decision tress </li>
+	
+	<li> Prevent overfitting with early stopping of algorithm. Following are the early stopping conditions: </li>
+
+
+	<ul style="list-style-type:disc;">
+
+		<li> Limit tree depth </li>
+		<li> Do not consider splits that do not reduce classification error </li>
+		<li> Do not split intermediate nodes with only few points </li>
+
+	</ul>
+
+	<li> Prevent overfitting by pruning complex trees into smaller ones by using below formula:  </li>
+
+	<ul style="list-style-type:disc;">
+		<li> Use a total cost formula (classification error + no. of leaves) that balances classification error and tree complexity </li>
+		<li> Use total cost to merge potentially complex trees into simpler ones </li>
+
+	</ul>
+
+
+</ul>
+
+
+
+
+<h3> Handling missing data  </h3>
+
+
+<ul style="list-style-type:disc;">
+
+	<li> Describe common ways to handling missing data. Following are the list of common ways: </li>
+
+		<ul style="list-style-type:disc;">
+			<li> Skip all rows with any missing values </li>
+			<li> Skip features with many missing values </li>
+			<li> Impute missing values using other data points </li>
+			<li> Modify learning algorithm (decision trees) to handle missing data. Following are the changes that we need to do:  </li>
+
+			<ul style="list-style-type:disc;">
+				<li> Missing values get added to one branch of split </li>
+				<li> Use classification error to determine where missing values go </li>
+			</ul>
+
+		</ul>
+
+
+</ul>
+
+
+
+
+<h3> Precision - Recall  </h3>
+
+<ul style="list-style-type:disc;">
+
+	<li> Classification accuracy/error are not always right metrics </li>
+	<li> Precision captures fraction of positive predictions tha are correct </li>
+	<li> Recall captures fraction of positive correctly identified by the model </li>
+	<li> Trade-off precision and recall by setting probability thresholds </li>
+	<li> Plot recision-recall curves </li>
+	<li> In which cases precision matters and in which recall matters </li>
+	<li> Choose one model from many models by looking at precision-recall </li>
+	<li> Compare models by computing precision at k (your end goal) </li>
+
+</ul>
+
+<h3> Sacaling ml to huge datasets  </h3>
+
+	
+<ul style="list-style-type:disc;">
+
+	<li> What is stochastic gradient </li>
+	<li> Significantly speedup learning algorithm using stochastic gradient </li>
+	<li> Describe intuition behind why stochastic gradient works </li>
+	<li> Apply stocahstic gradient in practice </li>
+	<li> Describe online learning problems </li>
+
+</ul>
+
+
+</body>
+</html>
