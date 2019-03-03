@@ -73,6 +73,22 @@ MENUITEMS = (
 
 LOAD_CONTENT_CACHE = False
 
+# "cover": "https://arslan-san.github.io/theme/images/cover_photo.jpg",
+
+AUTHORS_BIO = {
+  "arslan": {
+    "name": "Arslan",
+    "image": "https://arslan-san.github.io/theme/images/author.png",
+    "website": "http://arslan-san.github.io",
+    "linkedin": "https://www.linkedin.com/in/arslan-ahmad-705b58149/",
+    "github": "https://github.com/Arslan-san",
+    "location": "Pakistan",
+    "bio": "I did my bachelor's degree in computer science from Information Technology University. I always keen to learn things related to AI/machine learning and due to this I like to pursue my carrer in AI."
+  }
+}
+
+
+
 # if you set your home page rahther than blog page then do the following steps
 
 # make file in a page folder called home.md and the content of the file is:
