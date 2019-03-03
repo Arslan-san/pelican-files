@@ -1,0 +1,7 @@
+Title: Hierarchical Clustering
+Slug: hierarchical_clustering
+Date: 2019-03-03 
+Category: posts
+Tags: python clustering hierarchical-clustering divisive-clustering text 
+Author: Arslan
+Summary: Explore a Divisive clustering  a.k.a top-down approach, recursively bipartitioning the data using k-means.

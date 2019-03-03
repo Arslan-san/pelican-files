@@ -1,0 +1,7 @@
+Title: Fitting Gaussian Mixture Models with expectation–maximization (EM)
+Slug: fitting-gaussian-mixture-models-with-EM
+Date: 2019-03-03 
+Category: posts
+Tags: python clustering gaussian-mixture-model expectation–maximization EM images
+Author: Arslan
+Summary: Implement the expectation–maximization (EM) algorithm for a Gaussian mixture model and apply this implementation to cluster images.

@@ -1,0 +1,7 @@
+Title: Clustering using k-mean algorithm
+Slug: k-means-with-text-data
+Date: 2019-03-03 
+Category: posts
+Tags: python clustering k-mean k-mean++
+Author: Arslan
+Summary: Cluster Wikipedia documents using k-means.
