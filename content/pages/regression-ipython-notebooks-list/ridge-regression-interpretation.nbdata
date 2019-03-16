@@ -1,0 +1,9 @@
+Title: Ridge Regression Interpretation
+Slug: ridge-regression-interpretation
+Date: 2019-03-16 
+Category: posts
+Tags: python linear-regression ridge-regression
+Author: Arslan
+Summary: Run ridge regression multiple times with different L2 penalties to see which one produces the best fit.
+
+

@@ -1,0 +1,8 @@
+Title: Implement Ridge Regression Using Gradient Descent
+Slug: implemement-ridge-regression-using-gradient-descent
+Date: 2019-03-16 
+Category: posts
+Tags: python linear-regression ridge-regression gradient-descent
+Author: Arslan
+Summary: Estimate ridge regression weights via gradient descent.
+

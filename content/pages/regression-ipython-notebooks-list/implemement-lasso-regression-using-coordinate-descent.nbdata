@@ -1,0 +1,7 @@
+Title: Implemement Lasso Regression Using Coordinate Descent
+Slug: implemement-lasso-regression-using-coordinate-descent
+Date: 2019-03-16 
+Category: posts
+Tags: python linear-regression feature-selection lasso-regression coordinate-descent
+Author: Arslan
+Summary: Implement your very own LASSO solver via coordinate descent.
