@@ -69,6 +69,7 @@ MENUITEMS = (
     ('Useful Resources', '/pages/useful-resources.html'),
     ('Completed Coursera Courses', '/pages/completed-coursera-courses.html'),
     ('Useful Ipython Notebooks', '/pages/useful-ipython-notebooks.html'),
+    ('Personal Projects', '/pages/personal-projects.html'),
 )
 
 LOAD_CONTENT_CACHE = False

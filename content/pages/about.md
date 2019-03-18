@@ -12,10 +12,6 @@ Classification Algorithms, Data Clustering Algorithms and variuos concepts like 
 I have keep doing personel projects for learning purpose like rule based sentiment analysis on youtube comments. 
 
 
- 
-
-
-
 
 
 
